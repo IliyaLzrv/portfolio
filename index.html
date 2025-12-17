@@ -231,12 +231,16 @@
             gap: 2rem;
         }
 
+        /* ✅ UPDATED: flex column card so button can stick to bottom */
         .project-card {
             background-color: var(--card-bg);
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
+
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -251,8 +255,13 @@
             object-fit: cover;
         }
 
+        /* ✅ UPDATED: make project-info flexible */
         .project-info {
             padding: 1.5rem;
+
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
         .project-info h3 {
@@ -280,9 +289,18 @@
             border-radius: 20px;
         }
 
+        /* ✅ UPDATED: push project-links to bottom-left */
         .project-links {
+            margin-top: auto;
             display: flex;
             gap: 1rem;
+            justify-content: flex-start;
+        }
+
+        /* (Optional) slightly smaller buttons in cards */
+        .project-links .btn {
+            padding: 0.65rem 1.3rem;
+            font-size: 0.95rem;
         }
 
         /* Education section */
@@ -562,9 +580,8 @@
                         </div>
                     </div>
 
-                    <!-- NEW: Sorama Internship -->
                     <div class="project-card">
-                        <img src="assets/sorama.jpg" alt="Sorama Internship Screenshot" class="project-image">
+                        <img src="assets/sorama.png" alt="Sorama Internship Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Sorama — Internship Project</h3>
                             <p>
@@ -583,13 +600,12 @@
                         </div>
                     </div>
 
-                    <!-- NEW: Levski Triaditsa Website -->
                     <div class="project-card">
                         <img src="assets/levskiTriaditsa.png" alt="Levski Triaditsa Website Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Levski Triaditsa — Rhythmic Gymnastics Club Website</h3>
                             <p>
-                                Renovating the club website to look modern and professional, with clear schedule, coaches section, membership info,
+                                Renovating the club website to look modernd and professional, with clear schedule, coaches section, membership info,
                                 and a registration flow for new athletes and parents.
                             </p>
                             <div class="tech-stack">
@@ -604,7 +620,6 @@
                         </div>
                     </div>
 
-                    <!-- NEW: Basketball News + Shop -->
                     <div class="project-card">
                         <img src="assets/bballShop.png" alt="Basketball News & Shop Website Screenshot" class="project-image">
                         <div class="project-info">
