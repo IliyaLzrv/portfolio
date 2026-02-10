@@ -45,9 +45,22 @@ class TechStackFilter {
 
     init() {
         this.skillTags.forEach(tag => {
+            // Make tags keyboard accessible
+            tag.setAttribute('tabindex', '0');
+            tag.setAttribute('role', 'button');
+            tag.setAttribute('aria-label', `Filter projects by ${tag.getAttribute('data-tech')}`);
+            
             tag.addEventListener('click', () => {
                 const tech = tag.getAttribute('data-tech');
                 this.filterProjects(tech, tag);
+            });
+            
+            tag.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    const tech = tag.getAttribute('data-tech');
+                    this.filterProjects(tech, tag);
+                }
             });
         });
     }
@@ -79,7 +92,9 @@ class TechStackFilter {
                 }
             });
 
-            // Show filter message
+            // Show filter message with ARIA live region for screen readers
+            this.filterMessage.setAttribute('role', 'status');
+            this.filterMessage.setAttribute('aria-live', 'polite');
             if (visibleCount === 0) {
                 this.filterMessage.textContent = `No projects found using ${tech}.`;
                 this.filterMessage.classList.add('show');

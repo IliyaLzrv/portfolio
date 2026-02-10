@@ -7,34 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" aria-label="Navigate to Home section">Home</a>
+                <a href="#about" aria-label="Navigate to About section">About</a>
+                <a href="#projects" aria-label="Navigate to Projects section">Projects</a>
+                <a href="#education" aria-label="Navigate to Education section">Education</a>
+                <a href="#contact" aria-label="Navigate to Contact section">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Ilia Lazarov</h1>
-                <p>
-                    <span class="title-highlight">Junior Full Stack Developer</span> passionate about creating efficient and engaging mobile and web applications. Currently seeking a Job to apply my skills and grow even more in the real-world environment.
-                </p>
-                <div>
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-image">
+                        <a href="https://github.com/iliyaLzrv" target="_blank" rel="noopener noreferrer">
+                            <img src="https://github.com/iliyaLzrv.png?v=2" alt="Ilia Lazarov" class="profile-img">
+                        </a>
+                    </div>
+                    <div class="hero-content">
+                        <h1>Ilia Lazarov</h1>
+                        <p>
+                            <span class="title-highlight">Junior Full Stack Developer</span> passionate about creating efficient and engaging mobile and web applications. Currently seeking a Job to apply my skills and grow even more in the real-world environment.
+                        </p>
+                        <div>
+                            <a href="#projects" class="btn">View Projects</a>
+                            <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <a href="https://github.com/iliyaLzrv" target="_blank">
-                    <img src="https://github.com/iliyaLzrv.png?v=2" alt="Ilia Lazarov" class="profile-img">
-                </a>
             </div>
         </section>
 
@@ -49,52 +54,53 @@
                     </div>
                     <div class="skills">
                         <h3>Tech Stack</h3>
+                        <p class="skill-instruction">Click or press Enter on a technology to filter projects</p>
                         <div class="skill-list">
-                            <div class="skill-tag" data-tech="Flutter">
+                            <div class="skill-tag" data-tech="Flutter" data-experience="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
                                 Flutter
                             </div>
-                            <div class="skill-tag" data-tech="React">
+                            <div class="skill-tag" data-tech="React" data-experience="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                                 React
                             </div>
-                            <div class="skill-tag" data-tech="JavaScript">
+                            <div class="skill-tag" data-tech="JavaScript" data-experience="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                                 JavaScript
                             </div>
-                            <div class="skill-tag" data-tech="C# (.Net)">
+                            <div class="skill-tag" data-tech="C# (.Net)" data-experience="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
                                 C#
                             </div>
-                            <div class="skill-tag" data-tech="Java">
+                            <div class="skill-tag" data-tech="Java" data-experience="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                                 Java
                             </div>
-                            <div class="skill-tag" data-tech="Dart">
+                            <div class="skill-tag" data-tech="Dart" data-experience="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
                                 Dart
                             </div>
-                            <div class="skill-tag" data-tech="Python">
+                            <div class="skill-tag" data-tech="Python" data-experience="6">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                                 Python
                             </div>
-                            <div class="skill-tag" data-tech="Firebase">
+                            <div class="skill-tag" data-tech="Firebase" data-experience="7">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
                                 Firebase
                             </div>
-                            <div class="skill-tag" data-tech="HTML5">
+                            <div class="skill-tag" data-tech="HTML5" data-experience="10">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
                                 HTML5
                             </div>
-                            <div class="skill-tag" data-tech="CSS3">
+                            <div class="skill-tag" data-tech="CSS3" data-experience="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
                                 CSS3
                             </div>
-                            <div class="skill-tag" data-tech="Git">
+                            <div class="skill-tag" data-tech="Git" data-experience="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
                                 Git
                             </div>
-                            <div class="skill-tag" data-tech="Spring Boot">
+                            <div class="skill-tag" data-tech="Spring Boot" data-experience="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
                                 Spring Boot
                             </div>
@@ -107,10 +113,11 @@
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="filter-message" id="filterMessage"></div>
+                <div class="filter-message" id="filterMessage" role="status" aria-live="polite"></div>
                 <div class="projects-grid">
 
-                    <div class="project-card" data-tech="Flutter,Dart,Firebase">
+                    <div class="project-card" data-tech="Flutter,Dart,Firebase" data-status="completed">
+                        <div class="project-status">Completed</div>
                         <img src="assets/posture.png" alt="Posture Monitoring App Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Posture Monitoring App</h3>
@@ -121,12 +128,13 @@
                                 <span class="tech-tag">Firebase</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/posturetracker" class="btn">View Code</a>
+                                <a href="https://github.com/IliyaLzrv/posturetracker" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="Java,Spring Boot,React,WebSocket">
+                    <div class="project-card" data-tech="Java,Spring Boot,React,WebSocket" data-status="completed">
+                        <div class="project-status">Completed</div>
                         <img src="assets/robotio.jpg" alt="Robot.io Game Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Robot.io</h3>
@@ -138,12 +146,13 @@
                                 <span class="tech-tag">WebSocket</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/Robot.io" class="btn">View Code</a>
+                                <a href="https://github.com/IliyaLzrv/Robot.io" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="C# (.Net),React,TypeScript,Azure">
+                    <div class="project-card" data-tech="C# (.Net),React,TypeScript,Azure" data-status="completed">
+                        <div class="project-status">Completed</div>
                         <img src="assets/sorama.png" alt="Sorama Internship Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Sorama — Internship Project</h3>
@@ -163,7 +172,8 @@
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="React,JavaScript,UI / UX,Responsive Design">
+                    <div class="project-card" data-tech="React,JavaScript,UI / UX,Responsive Design" data-status="completed">
+                        <div class="project-status">Completed</div>
                         <img src="assets/levskiTriaditsa.png" alt="Levski Triaditsa Website Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Levski Triaditsa — Rhythmic Gymnastics Club Website</h3>
@@ -178,12 +188,13 @@
                                 <span class="tech-tag">Responsive Design</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/RhythmicGymnasticWebsite" class="btn">View Code</a>
+                                <a href="https://github.com/IliyaLzrv/RhythmicGymnasticWebsite" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="React,JavaScript,UI Components,Local Storage Cart">
+                    <div class="project-card" data-tech="React,JavaScript,UI Components,Local Storage Cart" data-status="completed">
+                        <div class="project-status">Completed</div>
                         <img src="assets/bballShop.png" alt="Basketball News & Shop Website Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Basketball News + Shop Website</h3>
@@ -198,7 +209,7 @@
                                 <span class="tech-tag">Local Storage Cart</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/bballShop" class="btn">View Code</a>
+                                <a href="https://github.com/IliyaLzrv/bballShop" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
                             </div>
                         </div>
                     </div>
