@@ -11,33 +11,67 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#home" aria-label="Navigate to Home section">Home</a>
-                <a href="#about" aria-label="Navigate to About section">About</a>
-                <a href="#projects" aria-label="Navigate to Projects section">Projects</a>
-                <a href="#education" aria-label="Navigate to Education section">Education</a>
-                <a href="#contact" aria-label="Navigate to Contact section">Contact</a>
+                <div class="nav-main">
+                    <a href="#home" aria-label="Navigate to Home section">Home</a>
+                    <a href="#about" aria-label="Navigate to About section">About</a>
+                    <a href="#projects" aria-label="Navigate to Projects section">Projects</a>
+                    <a href="#contact" aria-label="Navigate to Contact section">Contact</a>
+                </div>
+                <div class="nav-social">
+                    <a href="https://github.com/IliyaLzrv" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/ilia-lazarov-594409159/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
         <section id="home" class="hero">
+            <div class="hero-bg-dots" aria-hidden="true">
+                <div class="hero-dots-layer hero-dots-layer--soft"></div>
+                <div class="hero-dots-layer hero-dots-layer--mid"></div>
+            </div>
+            <div class="hero-atmosphere" aria-hidden="true"></div>
             <div class="container">
                 <div class="hero-wrapper">
-                    <div class="hero-image">
-                        <a href="https://github.com/iliyaLzrv" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/iliyaLzrv.png?v=2" alt="Ilia Lazarov" class="profile-img">
-                        </a>
-                    </div>
                     <div class="hero-content">
-                        <h1>Ilia Lazarov</h1>
-                        <p>
-                            <span class="title-highlight">Junior Full Stack Developer</span> passionate about creating efficient and engaging mobile and web applications. Currently seeking a Job to apply my skills and grow even more in the real-world environment.
+                        <div class="hero-heading">
+                            <h1 class="hero-name">Ilia Lazarov</h1>
+                            <p class="hero-status-pill">
+                              <span class="status-dot"></span>
+                              <span class="status-text">Open to Opportunities</span>
+                            </p>
+                          </div>
+                        <p class="hero-role-animated">
+                            <span class="role-word" data-words='["UX/UI", "Full Stack", "Mobile"]'>UX/UI</span> Developer
                         </p>
-                        <div>
+                        <p class="hero-tagline">I enjoy building things people actually use.</p>
+                        <p class="hero-description">
+                            Passionate about efficient and engaging mobile and web applications. Currently seeking a role to apply my skills and grow in a real-world environment.
+                        </p>
+                        <div class="hero-cta">
                             <a href="#projects" class="btn">View Projects</a>
                             <a href="#contact" class="btn btn-outline">Contact Me</a>
                         </div>
+                    </div>
+                    <div class="hero-image">
+                        <a href="https://github.com/iliyaLzrv" target="_blank" rel="noopener noreferrer" class="hero-photo-link">
+                            <div class="photo-ring photo-ring-primary"></div>
+                            <div class="photo-ring photo-ring-secondary"></div>
+                            <span class="hero-photo-glow" aria-hidden="true"></span>
+                            <img src="https://github.com/iliyaLzrv.png?v=2" alt="Ilia Lazarov — click to view GitHub" class="profile-img">
+                            <span class="hero-photo-hint">View GitHub →</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -48,63 +82,193 @@
                 <h2>About Me</h2>
                 <div class="about-container">
                     <div class="about-text">
-                        <p>Hi! I'm Ilia Lazarov, a Junior Software Developer born in Sofia, Bulgaria and based in Eindhoven, Netherlands. I'm passionate about mobile and web development and always looking for new challenges to tackle.</p>
-                        <p>My journey in software development started with my interest in creating solutions that make a real difference. I enjoy working with diverse technologies and am particularly interested in developing applications that provide genuine value to users.</p>
-                        <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously expanding my skills through online courses and hands-on projects.</p>
+                        <p>I'm a Software Engineering student based in the Netherlands with a background in graphic design. I enjoy building mobile and web applications where clean architecture and user experience meet.</p>
+                        <p>I'm especially interested in real-world systems and products used by actual users.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">📱</div>
+                            <h4>Focus: Smart Mobile</h4>
+                            <p>Cross-platform development with Flutter</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">⚡</div>
+                            <h4>Strength: Clean UI + Strong Backend</h4>
+                            <p>Full-stack with React, Java, C#</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🚀</div>
+                            <h4>Mindset: Always Learning</h4>
+                            <p>Building and improving continuously</p>
+                        </div>
                     </div>
                     <div class="skills">
-                        <h3>Tech Stack</h3>
-                        <p class="skill-instruction">Click or press Enter on a technology to filter projects</p>
+                        <h3>Tech Stack Dashboard</h3>
+                        <p class="skill-instruction">Hover to see experience • Click to filter projects by technology</p>
                         <div class="skill-list">
-                            <div class="skill-tag" data-tech="Flutter" data-experience="8">
+                            <div class="skill-tag" data-tech="Flutter" data-projects="Posture App" data-experience="2 years" data-level="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
-                                Flutter
+                                <span class="skill-name">Flutter</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 80%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="React" data-experience="9">
+                            <div class="skill-tag" data-tech="React" data-projects="Internship, Robot.io, Club sites" data-experience="3+ years" data-level="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                                React
+                                <span class="skill-name">React</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 90%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="JavaScript" data-experience="9">
+                            <div class="skill-tag" data-tech="JavaScript" data-projects="Robot.io, Levski, Basketball Shop" data-experience="3+ years" data-level="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                                JavaScript
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 90%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="C# (.Net)" data-experience="9">
+                            <div class="skill-tag" data-tech="C# (.Net)" data-projects="Internship backend" data-experience="4+ year" data-level="7">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-                                C#
+                                <span class="skill-name">C#</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 70%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Java" data-experience="9">
+                            <div class="skill-tag" data-tech="Java" data-projects="Robot.io backend" data-experience="3+ years" data-level="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                                Java
+                                <span class="skill-name">Java</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 80%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Dart" data-experience="8">
+                            <div class="skill-tag" data-tech="Dart" data-projects="Posture App" data-experience="2 years" data-level="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
-                                Dart
+                                <span class="skill-name">Dart</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 80%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Python" data-experience="6">
+                            <div class="skill-tag" data-tech="Python" data-projects="Scripting" data-experience="3+ year" data-level="6">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                                Python
+                                <span class="skill-name">Python</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 60%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Firebase" data-experience="7">
+                            <div class="skill-tag" data-tech="Firebase" data-projects="Posture App" data-experience="1 year" data-level="7">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
-                                Firebase
+                                <span class="skill-name">Firebase</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 70%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="HTML5" data-experience="10">
+                            <div class="skill-tag" data-tech="HTML5" data-projects="All web projects" data-experience="5+ years" data-level="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                                HTML5
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 90%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="CSS3" data-experience="9">
+                            <div class="skill-tag" data-tech="CSS3" data-projects="All web projects" data-experience="5+ years" data-level="9">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                                CSS3
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 90%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Git" data-experience="8">
+                            <div class="skill-tag" data-tech="Git" data-projects="All projects" data-experience="3+ years" data-level="8">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                                Git
+                                <span class="skill-name">Git</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 80%"></div></div>
                             </div>
-                            <div class="skill-tag" data-tech="Spring Boot" data-experience="8">
+                            <div class="skill-tag" data-tech="Spring Boot" data-projects="Robot.io" data-experience="4+ year" data-level="7">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
-                                Spring Boot
+                                <span class="skill-name">Spring Boot</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-tag" data-tech="TypeScript" data-projects="Internship" data-experience="3+ year" data-level="7">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-tag" data-tech="Azure" data-projects="Internship" data-experience="6 months" data-level="6">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                                <span class="skill-name">Azure</span>
+                                <div class="skill-meter"><div class="skill-meter-fill" style="width: 60%"></div></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="hero-scroll-hint">
+                    <span>Scroll to projects</span>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="preferred-tech">
+            <div class="container">
+                <h2>Technologies I Prefer to Work With</h2>
+                <p class="section-subtitle">These are the technologies I enjoy working with most and where I focus my learning</p>
+                <div class="preferred-tech-grid">
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                        <h3>React</h3>
+                        <p>Building interactive UIs with component-based architecture</p>
+                    </div>
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Modern ES6+ features and async programming</p>
+                    </div>
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                        </div>
+                        <h3>Flutter</h3>
+                        <p>Cross-platform mobile development</p>
+                    </div>
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <h3>TypeScript</h3>
+                        <p>Type-safe development for scalable applications</p>
+                    </div>
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        </div>
+                        <h3>Java</h3>
+                        <p>Backend development with Spring Boot</p>
+                    </div>
+                    <div class="preferred-tech-card">
+                        <div class="preferred-tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                        </div>
+                        <h3>C#</h3>
+                        <p>Backend development with .NET</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github-contributions">
+            <div class="container">
+                <h2>GitHub Contributions</h2>
+                <p class="section-subtitle">My coding activity and contributions over time</p>
+                <div class="github-contribution-wrapper">
+                    <img 
+                        src="https://ghchart.rshah.org/iliyaLzrv" 
+                        alt="GitHub Contribution Graph" 
+                        class="github-contribution-chart"
+                        loading="lazy"
+                    >
+                    <p class="github-note">View my full GitHub profile: <a href="https://github.com/iliyaLzrv" target="_blank" rel="noopener noreferrer">github.com/iliyaLzrv</a></p>
+                </div>
+                <div class="github-pinned">
+                    <h3>Pinned Work</h3>
+                    <p class="pinned-subtitle">Quick access to my best work</p>
+                    <div class="pinned-grid">
+                        <a href="https://github.com/IliyaLzrv/Robot.io" target="_blank" rel="noopener noreferrer" class="pinned-card">
+                            <div class="pinned-icon">🎮</div>
+                            <h4>Robot.io</h4>
+                            <p>Real-time multiplayer game</p>
+                        </a>
+                        <a href="https://github.com/IliyaLzrv/posturetracker" target="_blank" rel="noopener noreferrer" class="pinned-card">
+                            <div class="pinned-icon">📱</div>
+                            <h4>Posture App</h4>
+                            <p>Mobile sensor monitoring</p>
+                        </a>
+                        <a href="mailto:iliya.lazarov03@gmail.com" class="pinned-card">
+                            <div class="pinned-icon">💼</div>
+                            <h4>Internship Project</h4>
+                            <p>Enterprise dashboard</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -116,8 +280,8 @@
                 <div class="filter-message" id="filterMessage" role="status" aria-live="polite"></div>
                 <div class="projects-grid">
 
-                    <div class="project-card" data-tech="Flutter,Dart,Firebase" data-status="completed">
-                        <div class="project-status">Completed</div>
+                    <div class="project-card" data-tech="Flutter,Dart,Firebase" data-status="completed" data-year="2024">
+                        <div class="project-status">Shipped ✅</div>
                         <img src="assets/posture.png" alt="Posture Monitoring App Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Posture Monitoring App</h3>
@@ -128,13 +292,14 @@
                                 <span class="tech-tag">Firebase</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/posturetracker" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <span class="project-card-hint">View code →</span>
+                                <a href="https://github.com/IliyaLzrv/posturetracker" class="btn" target="_blank" rel="noopener noreferrer">Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="Java,Spring Boot,React,WebSocket" data-status="completed">
-                        <div class="project-status">Completed</div>
+                    <div class="project-card" data-tech="Java,Spring Boot,React,WebSocket" data-status="completed" data-year="2024">
+                        <div class="project-status">Shipped ✅</div>
                         <img src="assets/robotio.jpg" alt="Robot.io Game Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Robot.io</h3>
@@ -146,13 +311,14 @@
                                 <span class="tech-tag">WebSocket</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/Robot.io" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <span class="project-card-hint">View code →</span>
+                                <a href="https://github.com/IliyaLzrv/Robot.io" class="btn" target="_blank" rel="noopener noreferrer">Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="C# (.Net),React,TypeScript,Azure" data-status="completed">
-                        <div class="project-status">Completed</div>
+                    <div class="project-card" data-tech="C# (.Net),React,TypeScript,Azure" data-status="completed" data-year="2024">
+                        <div class="project-status">Shipped ✅</div>
                         <img src="assets/sorama.png" alt="Sorama Internship Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Sorama — Internship Project</h3>
@@ -167,13 +333,14 @@
                                 <span class="tech-tag">Azure</span>
                             </div>
                             <div class="project-links">
-                                <a href="mailto:iliya.lazarov03@gmail.com" class="btn">Ask for Demo</a>
+                                <span class="project-card-hint">Contact me →</span>
+                                <a href="mailto:iliya.lazarov03@gmail.com" class="btn">Request Demo</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="React,JavaScript,UI / UX,Responsive Design" data-status="completed">
-                        <div class="project-status">Completed</div>
+                    <div class="project-card" data-tech="React,JavaScript,UI / UX,Responsive Design" data-status="completed" data-year="2024">
+                        <div class="project-status">Shipped ✅</div>
                         <img src="assets/levskiTriaditsa.png" alt="Levski Triaditsa Website Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Levski Triaditsa — Rhythmic Gymnastics Club Website</h3>
@@ -188,13 +355,14 @@
                                 <span class="tech-tag">Responsive Design</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/RhythmicGymnasticWebsite" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <span class="project-card-hint">View code →</span>
+                                <a href="https://github.com/IliyaLzrv/RhythmicGymnasticWebsite" class="btn" target="_blank" rel="noopener noreferrer">Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-tech="React,JavaScript,UI Components,Local Storage Cart" data-status="completed">
-                        <div class="project-status">Completed</div>
+                    <div class="project-card" data-tech="React,JavaScript,UI Components,Local Storage Cart" data-status="completed" data-year="2024">
+                        <div class="project-status">Shipped ✅</div>
                         <img src="assets/bballShop.png" alt="Basketball News & Shop Website Screenshot" class="project-image">
                         <div class="project-info">
                             <h3>Basketball News + Shop Website</h3>
@@ -209,7 +377,8 @@
                                 <span class="tech-tag">Local Storage Cart</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/IliyaLzrv/bballShop" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <span class="project-card-hint">View code →</span>
+                                <a href="https://github.com/IliyaLzrv/bballShop" class="btn" target="_blank" rel="noopener noreferrer">Code</a>
                             </div>
                         </div>
                     </div>
@@ -224,18 +393,26 @@
                 <div class="education-card">
                     <h3>Fontys University of Applied Sciences</h3>
                     <h4>ICT & Software Engineering - Smart Mobile (Expected 2027)</h4>
-                    <p>Pursuing a degree in Software Engineering with a focus on mobile development, gaining skills in programming, system design, and software architecture.</p>
+                    <ul class="education-bullets">
+                        <li>Focus: Mobile development, system architecture, real-world software projects</li>
+                        <li>Key topics: Full-stack development, mobile frameworks, software design patterns</li>
+                    </ul>
                 </div>
                 <div class="education-card">
                     <h3>137 SU Angel Kunchev – Sofia, Bulgaria</h3>
                     <h4>Graphic Design Profile – High School Diploma (Graduated 2022)</h4>
+                    <ul class="education-bullets">
+                        <li>Focus: Visual design principles and digital media</li>
+                        <li>Achievement: Foundation in design thinking applied to UI/UX development</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <div class="container">
                 <h2>Get in Touch</h2>
+                <p class="contact-cta">Want to build something together?</p>
                 <div class="contact-grid">
                     <div class="contact-card">
                         <div class="contact-icon">✉️</div>
@@ -265,9 +442,9 @@
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="https://github.com/IliyaLzrv" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/ilia-lazarov-594409159/" target="_blank">LinkedIn</a>
-                <a href="https://git.fhict.nl/I500804" target="_blank">GitLab</a>
+                <a href="https://github.com/IliyaLzrv" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/ilia-lazarov-594409159/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://git.fhict.nl/I500804" target="_blank" rel="noopener noreferrer">GitLab</a>
             </div>
             <p>&copy; 2025 Ilia Lazarov. All rights reserved.</p>
         </div>
