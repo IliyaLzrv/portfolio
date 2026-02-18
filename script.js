@@ -403,11 +403,9 @@ class CopyEmail {
     }
 }
 
-// Initialize all features
 // Easter Egg — click name to show tooltip
 class EasterEgg {
     static init() {
-        // Wait for DOM to be fully ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => this.start());
         } else {
@@ -443,8 +441,6 @@ class EasterEgg {
 
         heroName.addEventListener('click', showTooltip);
         heroName.addEventListener('touchstart', showTooltip);
-        
-        // Ensure cursor pointer
         heroName.style.cursor = 'pointer';
     }
 }
@@ -472,6 +468,5 @@ document.addEventListener('DOMContentLoaded', () => {
     PhotoTilt.init();
     TechMagnetize.init();
     CopyEmail.init();
-    //EasterEgg.init(); // Disabled - easter egg removed
     PinnedCards.init();
 });
